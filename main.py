@@ -1,11 +1,20 @@
-from BankAccount import *
+from checking import checking
+# from savings import savings
+
 # Main Method
 if __name__ == '__main__':
-    daveBank = BankAccount("Dave",3000.00,300.00)
-
+    """daveBank = BankAccount("Dave",3000.00,300.00)
     daveBank.deposit(500)
     daveBank.withdraw(500.00)
-
     daveBank.withdraw(5000.00)
+    daveBank.print_customer_information()"""
 
-    daveBank.print_customer_information()
+    #Checking Account Test
+    daveChecking = checking("Dave", 3000.00, 300.00, "8749326472", "7432947320")
+    daveChecking.deposit(500)
+    daveChecking.withdraw(100)
+    daveChecking.withdraw(5600)
+    daveChecking.print_customer_information()
+
+    #Savings Account Test
+
