@@ -1,3 +1,5 @@
+from checking import *
+from savings import *
 class BankAccount:
     # Class attribute
     title = "Super Bank"
