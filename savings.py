@@ -1,5 +1,5 @@
 
-class savings(bankAccount):
+class savings(BankAccount):
     def __init__(self, name, balance, min_balance):
         super().__init__(name, balance, min_balance)
 

@@ -1,6 +1,6 @@
-from main import bankAccount
+from main import BankAccount
 
-class checkingAccount(bankAccount):
+class checking(BankAccount):
 
     def transferLimit(self, transferAmount):
         transferAmount = float(input("Enter the amount you want to transfer: "))
