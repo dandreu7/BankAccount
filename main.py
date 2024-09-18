@@ -1,5 +1,5 @@
 from checking import checking
-# from savings import savings
+from savings import savings
 
 # Main Method
 if __name__ == '__main__':
@@ -17,4 +17,10 @@ if __name__ == '__main__':
     daveChecking.print_customer_information()
 
     #Savings Account Test
+    daveSavings = savings("Dave", 3000.00, 300.00, 3.5)  # 3.5% annual interest rate
+    daveSavings.deposit(1000) 
+    daveSavings.withdraw(500)  
+    daveSavings.apply_interest()  
+    daveSavings.print_customer_information()  
+    
 
